@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,body{
+    width: 100%;
+    background: #ECECEC;
+    display: flex;
+    justify-content: center;
+
+}
+
+.card{
+    margin-top: 30px;
+    background: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+input{
+    width: 500px;
+    height: 40px;
+}
+h2{
+    font-size: 2.5rem;
+}
+
+form button{
+    background: rgb(83, 83, 230);
+    color: white;
+    padding: 12px;
+}
+
+.smallCard{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: #F5F5F5;
+    width: 600px;
+    border-radius: 8px;
+    align-items: center;
+
+}
+
+.deleteTodo{
+    background: red;
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}

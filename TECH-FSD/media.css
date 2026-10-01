@@ -1,0 +1,74 @@
+@media(max-width:768px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        text-align: center;
+        min-height: auto;
+        padding: 60px 0;
+    }
+
+    .hero-left {
+        align-items: center;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        max-width: 500px;
+        margin: 0 auto 35px;
+    }
+
+    .hero h1 {
+        font-size: 2.6rem;
+        line-height: 1.25;
+        max-width: 650px;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .hero-btn {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .dashboard {
+        width: 100%;
+        max-width: 380px;
+        margin: auto;
+    }
+
+    .dashboard-body {
+        min-height: 240px;
+    }
+
+    .brands-container {
+        justify-content: center;
+        gap: 35px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}

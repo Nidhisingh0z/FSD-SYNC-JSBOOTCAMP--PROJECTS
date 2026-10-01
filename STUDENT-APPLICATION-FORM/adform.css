@@ -1,0 +1,396 @@
+/* ================================
+   RESET
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ================================
+   BODY
+================================ */
+
+body {
+    background: #f3f4f6;
+    padding: 40px 20px;
+}
+
+
+/* ================================
+   CONTAINER
+================================ */
+
+.container {
+    max-width: 850px;
+    margin: auto;
+}
+
+
+/* ================================
+   HEADING
+================================ */
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1f2937;
+}
+
+.students-heading {
+    margin: 40px 0 20px;
+    color: #1f2937;
+}
+
+
+/* ================================
+   FORM
+================================ */
+
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ================================
+   FORM GROUP
+================================ */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group > label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #374151;
+}
+
+
+/* ================================
+   INPUTS
+================================ */
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+
+/* Input focus */
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+
+/* ================================
+   TEXTAREA
+================================ */
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+
+/* ================================
+   RADIO + CHECKBOX
+================================ */
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.radio-group label,
+.checkbox-group label {
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.radio-group input,
+.checkbox-group input {
+    margin-right: 5px;
+}
+
+
+/* ================================
+   PHOTO UPLOAD BUTTON
+================================ */
+
+.upload-btn {
+    padding: 11px 18px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: #2563eb;
+    color: white;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.upload-btn:hover {
+    background: #1d4ed8;
+}
+
+
+/* ================================
+   FILE NAME
+================================ */
+
+#fileName {
+    margin-top: 8px;
+
+    color: #555;
+
+    font-size: 14px;
+}
+
+
+/* ================================
+   ERROR MESSAGE
+================================ */
+
+small {
+    display: block;
+
+    margin-top: 5px;
+
+    color: crimson;
+
+    min-height: 16px;
+
+    font-size: 13px;
+}
+
+
+/* ================================
+   TERMS
+================================ */
+
+.terms {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+.terms label {
+    cursor: pointer;
+}
+
+
+/* ================================
+   SUBMIT BUTTON
+================================ */
+
+.submit-btn {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+    border-radius: 7px;
+
+    background: #16a34a;
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.submit-btn:hover {
+    background: #15803d;
+}
+
+
+/* ================================
+   STUDENT CONTAINER
+================================ */
+
+#studentContainer {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 20px;
+}
+
+
+/* ================================
+   STUDENT CARD
+================================ */
+
+.student-card {
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.1);
+
+    transition: 0.2s;
+}
+
+.student-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 7px 18px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ================================
+   STUDENT PHOTO
+================================ */
+
+.student-photo {
+    width: 100px;
+    height: 100px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    display: block;
+
+    margin: 0 auto 15px;
+
+    border: 3px solid #2563eb;
+}
+
+
+/* ================================
+   CARD HEADING
+================================ */
+
+.student-card h3 {
+    text-align: center;
+
+    margin-bottom: 15px;
+
+    color: #1f2937;
+}
+
+
+/* ================================
+   CARD PARAGRAPH
+================================ */
+
+.student-card p {
+    margin: 8px 0;
+
+    color: #4b5563;
+
+    line-height: 1.4;
+}
+
+.student-card strong {
+    color: #111827;
+}
+
+
+/* ================================
+   SKILLS
+================================ */
+
+.skills {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 6px;
+
+    margin-top: 8px;
+}
+
+
+/* Individual skill */
+
+.skill {
+    background: #e0e7ff;
+
+    color: #3730a3;
+
+    padding: 5px 9px;
+
+    border-radius: 5px;
+
+    font-size: 13px;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    .radio-group,
+    .checkbox-group {
+        gap: 12px;
+    }
+
+    .student-card {
+        padding: 18px;
+    }
+}

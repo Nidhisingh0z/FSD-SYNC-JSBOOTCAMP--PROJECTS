@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Admission Form</title>
+
+    <link rel="stylesheet" href="adform.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Admission Form</h1>
+
+        <form id="admissionForm">
+
+            <!-- NAME -->
+            <div class="form-group">
+                <label for="name">Full Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your full name"
+                >
+
+                <small id="nameError"></small>
+            </div>
+
+
+            <!-- EMAIL -->
+            <div class="form-group">
+                <label for="email">Email</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                >
+
+                <small id="emailError"></small>
+            </div>
+
+
+            <!-- PASSWORD -->
+            <div class="form-group">
+                <label for="password">Admission Password</label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Create a password"
+                >
+
+                <small id="passwordError"></small>
+            </div>
+
+
+            <!-- AGE -->
+            <div class="form-group">
+                <label for="age">Age</label>
+
+                <input
+                    type="number"
+                    id="age"
+                    placeholder="Enter your age"
+                    min="15"
+                    max="60"
+                >
+
+                <small id="ageError"></small>
+            </div>
+
+
+            <!-- DOB -->
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+
+                <input
+                    type="date"
+                    id="dob"
+                >
+
+                <small id="dobError"></small>
+            </div>
+
+
+            <!-- INTERVIEW TIME -->
+            <div class="form-group">
+                <label for="time">Preferred Interview Time</label>
+
+                <input
+                    type="time"
+                    id="time"
+                >
+
+                <small id="timeError"></small>
+            </div>
+
+
+            <!-- GENDER -->
+            <div class="form-group">
+
+                <label>Gender</label>
+
+                <div class="radio-group">
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="Male"
+                        >
+                        Male
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="Female"
+                        >
+                        Female
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="Other"
+                        >
+                        Other
+                    </label>
+
+                </div>
+
+                <small id="genderError"></small>
+
+            </div>
+
+
+            <!-- COURSE -->
+            <div class="form-group">
+
+                <label for="course">Select Course</label>
+
+                <select id="course">
+
+                    <option value="">Select a course</option>
+
+                    <option value="B.Tech CSE">
+                        B.Tech CSE
+                    </option>
+
+                    <option value="BCA">
+                        BCA
+                    </option>
+
+                    <option value="MCA">
+                        MCA
+                    </option>
+
+                    <option value="BBA">
+                        BBA
+                    </option>
+
+                </select>
+
+                <small id="courseError"></small>
+
+            </div>
+
+
+            <!-- ADDRESS -->
+            <div class="form-group">
+
+                <label for="address">Address</label>
+
+                <textarea
+                    id="address"
+                    placeholder="Enter your complete address"
+                ></textarea>
+
+                <small id="addressError"></small>
+
+            </div>
+
+
+            <!-- SKILLS -->
+            <div class="form-group">
+
+                <label>Skills</label>
+
+                <div class="checkbox-group">
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="skills"
+                            value="HTML"
+                        >
+                        HTML
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="skills"
+                            value="CSS"
+                        >
+                        CSS
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="skills"
+                            value="JavaScript"
+                        >
+                        JavaScript
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="skills"
+                            value="React"
+                        >
+                        React
+                    </label>
+
+                </div>
+
+                <small id="skillsError"></small>
+
+            </div>
+
+
+            <!-- STUDENT PHOTO -->
+            <div class="form-group">
+
+                <label for="photo">
+                    Upload Student Photo
+                </label>
+
+                <input
+                    type="file"
+                    id="photo"
+                    class="inp"
+                    accept="image/*"
+                    hidden
+                >
+
+                <button
+                    type="button"
+                    id="uploadBtn"
+                    class="upload-btn"
+                >
+                    Choose Photo
+                </button>
+
+                <p id="fileName">
+                    No photo selected
+                </p>
+
+                <small id="photoError"></small>
+
+            </div>
+
+
+            <!-- TERMS -->
+            <div class="form-group">
+
+                <div class="terms">
+
+                    <input
+                        type="checkbox"
+                        id="terms"
+                        name="terms"
+                    >
+
+                    <label for="terms">
+                        I agree to the terms and conditions
+                    </label>
+
+                </div>
+
+                <small id="termsError"></small>
+
+            </div>
+
+
+            <!-- SUBMIT -->
+            <button
+                type="submit"
+                class="submit-btn"
+            >
+                Submit
+            </button>
+
+        </form>
+
+
+        <!-- STUDENT APPLICATIONS -->
+
+        <h2 class="students-heading">
+            Submitted Applications
+        </h2>
+
+        <div id="studentContainer"></div>
+
+    </div>
+
+
+    <script src="adform.js"></script>
+
+</body>
+
+</html>
